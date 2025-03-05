@@ -53,6 +53,7 @@ app.use((req, res, next) => {
 
 // Simple Hello World route
 app.get("/", (req, res) => {
+  Logger.info("Hello PoliSync API called!");
     res.send("Hello PoliSync API");
   });
 
